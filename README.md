@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # yes_no_generator
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# Yes-No-Decision-Helper
+>>>>>>> d41791518f37603c3b86beab648bda0c50222699
