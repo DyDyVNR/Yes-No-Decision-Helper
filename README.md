@@ -1,11 +1,35 @@
-<<<<<<< HEAD
-# yes_no_generator
 
-A new Flutter project.
+# Yes-No Generator
+
+* A fun side project built on the Flutter framework.
+* It involved API integration that generates a random answer between yes and no, along with the random meme gif associated with it.
+
+## Quick View
+<div float="left">
+  <picture> 
+    <img src="assets/images/Home_page.png"
+       click="disabled"
+       alt="Homepage"
+       width="250"
+       height="480"/ /> &emsp; 
+  </picture>
+  <picture>
+    <img src="assets/images/yes.gif"
+       alt="Yes-gif"
+       width="250"
+       height="480" /> &emsp;
+  </picture>
+  <picture>
+    <img src="assets/images/no.gif"
+       alt="No-gif"
+       width="250"
+       height="480" />
+  </picture>
+</div>
+
+
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -16,5 +40,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 =======
-# Yes-No-Decision-Helper
->>>>>>> d41791518f37603c3b86beab648bda0c50222699
+
