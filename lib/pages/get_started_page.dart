@@ -32,7 +32,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
             ),
           ),
           Positioned(
-             top: 150,right:  -220,
+            top: 150,right:  -220,
             child: Container(
               width: 450, height: 450,
               decoration: BoxDecoration(
@@ -111,13 +111,12 @@ class _GetStartedPageState extends State<GetStartedPage> {
       ),
       child: Container(
         height: 190, width: 190,
-        
         decoration: BoxDecoration(      
           shape: BoxShape.circle,
-           image: DecorationImage(
-             colorFilter: ColorFilter.mode(Colors.grey.shade800, BlendMode.dstATop),
-          image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR78-i1gO8cK4Cz2_qKIY3ar7yiHKA0oD3PHg&usqp=CAU"),          
-          fit: BoxFit.cover, 
+          image: DecorationImage(
+            colorFilter: ColorFilter.mode(Colors.grey.shade800, BlendMode.dstATop),
+            image: const NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR78-i1gO8cK4Cz2_qKIY3ar7yiHKA0oD3PHg&usqp=CAU"),          
+            fit: BoxFit.cover, 
         )   
         ),
       )

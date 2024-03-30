@@ -17,33 +17,68 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    // context.read<YesNoLogic>().getData();
+    context.read<YesNoLogic>().getData();
     super.initState();
   }
   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //appBar: _buildAppBar,
-      body: _buildBody,
+      appBar: _buildAppBar,
+      body: _buildBody(context),
     );
   }
 
   AppBar get _buildAppBar {
     return AppBar(
       centerTitle: true,
-      backgroundColor: Colors.orangeAccent,
+      backgroundColor: Colors.deepPurple,
       title: Text("Decision Maker"),
     );
   }
+  Widget _buildBody(BuildContext context) {
+    return Container(
+      color: Colors.black,
+      child: Stack(
+        children: [
+          Positioned(
+            left: -170,
+            top:-170,
+            child: Container(
+              width: 400, height: 400,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(100),
+                gradient: RadialGradient(
+                  tileMode: TileMode.decal,
+                  colors: [ Colors.purple,Colors.black,])
+              ),
+            ),
+          ),
+          Positioned(
+            top: 150,right:  -220,
+            child: Container(
+              width: 450, height: 450,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(100),
+                gradient: RadialGradient(
+                  tileMode: TileMode.decal,
+                  colors: [Colors.teal, Colors.black])
+              ),
+            ),
+          ),
+          _buildResponse,
+        ],
+      ),
+    );
+  }
 
-  Widget get _buildBody {
+  Widget get _buildResponse {
     Status readingStatus = context.watch<YesNoLogic>().status;
 
     switch (readingStatus) {
       case Status.none:
       case Status.loading:
-        return Center(child: CircularProgressIndicator());
+        return const Center(child: CircularProgressIndicator());
       case Status.done:
         return _buildListView;
       case Status.error:
@@ -76,16 +111,19 @@ class _HomePageState extends State<HomePage> {
         context.watch<YesNoLogic>().yesNoModel;
 
     return Container(
-      child:  Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(results.answer, style: TextStyle(color: results.answer=='yes'?Colors.green:Colors.red, fontSize: 30, fontWeight: FontWeight.bold),), 
-              Image(image: NetworkImage(results.image))
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: NetworkImage(results.image)
+        )
+      ),
+      alignment: Alignment.center,
+      child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(height: 250,),
+            Text(results.answer, style: TextStyle(color: results.answer=='yes'?Colors.green:Colors.red, fontSize: 30, fontWeight: FontWeight.bold),), 
             ],
           ),
-        )
-                
-                );
+    );
   }
 }
