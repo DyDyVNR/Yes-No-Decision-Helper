@@ -3,7 +3,6 @@
 ![Framework](https://img.shields.io/badge/framework-Flutter-02569B.svg?logo=flutter)
 ![Language](https://img.shields.io/badge/language-Dart-0175C2.svg?logo=dart)
 ![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web%20%7C%20Windows-lightgrey.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 Can't make up your mind? Let the universe decide. Yes-No Decision Helper is a fun Flutter app that answers your yes/no questions with a random response and a matching meme GIF powered by a live API.
 
