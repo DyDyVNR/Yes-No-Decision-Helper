@@ -11,7 +11,7 @@ Can't make up your mind? Let the universe decide. Yes-No Decision Helper is a fu
 
 | Home | Yes | No |
 |------|-----|-----|
-| <a href="#"><img src="assets/images/Home_page.png" width="200"/></a> | <a href="#"><img src="assets/images/yes.gif" width="200"/></a> | <a href="#"><img src="assets/images/no.gif" width="200"/></a> |
+| <a href="#"><img src="assets/images/Home_page.png"/></a> | <a href="#"><img src="assets/images/yes.gif"/></a> | <a href="#"><img src="assets/images/no.gif"/></a> |
 
 ---
 
