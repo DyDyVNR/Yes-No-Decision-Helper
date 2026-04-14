@@ -10,8 +10,8 @@ Can't make up your mind? Let the universe decide. Yes-No Decision Helper is a fu
 ## Quick View
 
 | Home | Yes | No |
-|------|-----|----|
-| ![Home](assets/images/Home_page.png) | ![Yes](assets/images/yes.gif) | ![No](assets/images/no.gif) |
+|------|-----|-----|
+| <img src="assets/images/Home_page.png" width="200"/> | <img src="assets/images/yes.gif" width="200"/> | <img src="assets/images/no.gif" width="200"/> |
 
 ---
 
